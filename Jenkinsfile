@@ -1,5 +1,10 @@
 pipeline {
     agent any
+    
+    agent {
+	maven 'Maven'
+	git 'Git'
+    }
 
     environment {
         IMAGE_NAME = "hello-world-java-app"

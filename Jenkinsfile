@@ -1,9 +1,9 @@
 pipeline {
     agent any
     
-    agent {
-	maven 'Maven'
-	git 'Git'
+    tools {
+		maven 'Maven'
+		git 'Git'
     }
 
     environment {
